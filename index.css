@@ -130,48 +130,11 @@
     width: 40%;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 .intro-img img {
-    width: 300px;
-    position: absolute;
-    left: 20%;
-    top: 10%;
+    width: 350px;
     border-radius: 50%;
     border: 3px solid rgb(153, 6, 6);
-}
-.bubble-div {
-    width: 400px;
-    height: 400px;
-    animation: rotate 7s linear infinite;
-}
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-        border-radius: 150px 100px 200px 60px;
-        background-color: red;
-    }
-    5% {
-        border-radius: 150px 70px 200px 130px;
-        background-color: blue;
-    }
-    25% {
-        border-radius: 150px 50px 200px 50px;
-        background-color: green;
-    }
-    50% {
-        border-radius: 350px 160px 90px 120px;
-        background-color: pink;
-    }
-    75% {
-        border-radius: 300px 150px 100px 90px;
-        background-color: chartreuse;
-    }
-    100% {
-        transform: rotate(360deg);
-        border-radius: 130px 100px 250px 70px;
-        background-color: red;
-    }
 }
 .about {
     width: 100%;
@@ -324,7 +287,7 @@
     z-index: 1;
 }
 
-@media (width <= 1200px) {
+@media (width < 1200px) {
     .nav-logo {
         font-size: 27px;
     }
@@ -396,42 +359,7 @@
         margin-top: 100px;
     }
     .intro-img img {
-        width: 150px;
-        left: 28%;
-        top: 8%;
-    }
-    .bubble-div {
         width: 200px;
-        height: 200px;
-        animation: rotate 7s linear infinite;
-    }
-    @keyframes rotate {
-        0% {
-            transform: rotate(0deg);
-            border-radius: 150px 100px 200px 100px;
-            background-color: red;
-        }
-        5% {
-            border-radius: 120px 50px 150px 90px;
-            background-color: blue;
-        }
-        25% {
-            border-radius: 150px 80px 200px 70px;
-            background-color: green;
-        }
-        50% {
-            border-radius: 350px 160px 90px 120px;
-            background-color: pink;
-        }
-        75% {
-            border-radius: 300px 150px 100px 90px;
-            background-color: chartreuse;
-        }
-        100% {
-            transform: rotate(360deg);
-            border-radius: 130px 100px 250px 70px;
-            background-color: red;
-        }
     }
     .about {
         padding: 50px 20px 50px 20px;
